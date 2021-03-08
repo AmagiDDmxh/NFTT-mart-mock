@@ -32,7 +32,7 @@ module.exports = [
   {
     name: "production",
     type: "sqlite",
-    url: process.env.DATABASE_URL,
+    // url: process.env.DATABASE_URL,
     synchronize: true, // switch this to false once you have the initial tables created and use migrations instead
     logging: true,
     entities: ["src/entity/**/*.js"],
