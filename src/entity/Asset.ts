@@ -45,6 +45,14 @@ export class Asset extends BaseEntity {
 
   @Field()
   @Column()
+  price!: number;
+
+  @Field()
+  @Column()
+  latestPrice: number;
+
+  @Field()
+  @Column()
   collectionId!: number;
 
   @Field()
@@ -53,9 +61,9 @@ export class Asset extends BaseEntity {
 
   @Field(() => String)
   @CreateDateColumn()
-  createdAt: Date;
+  createdAt!: Date;
 
   @Field(() => String)
   @UpdateDateColumn()
-  updatedAt: Date;
+  updatedAt!: Date;
 }

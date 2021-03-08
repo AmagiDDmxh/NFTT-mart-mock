@@ -18,6 +18,8 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
+    latestPrice: casual.double(1, 100000),
   },
   {
     id: 2,
@@ -32,6 +34,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 3,
@@ -46,6 +49,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 4,
@@ -60,6 +64,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 5,
@@ -74,6 +79,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 6,
@@ -88,6 +94,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 7,
@@ -102,6 +109,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 8,
@@ -116,6 +124,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 9,
@@ -130,6 +139,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 10,
@@ -144,6 +154,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 11,
@@ -158,6 +169,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 12,
@@ -172,6 +184,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 13,
@@ -186,6 +199,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 14,
@@ -200,6 +214,7 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
   {
     id: 15,
@@ -214,5 +229,6 @@ export default [
     categoryId: casual.random_element(categoryIds),
     createdAt: "2021-02-26T00:59:52+08:00",
     updatedAt: "2021-02-26T00:59:52+08:00",
+    price: casual.double(1, 100000),
   },
 ];

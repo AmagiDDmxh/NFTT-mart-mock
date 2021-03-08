@@ -27,7 +27,11 @@ import { AssetResolver } from "./resolvers/AssetResolver";
     playground: true,
   });
 
-  apolloServer.applyMiddleware({ app, cors: false });
+  apolloServer.applyMiddleware({
+    app,
+    // cors: false
+  });
+  
   const port = process.env.PORT || 8888;
   app.listen(port, () => {
     console.log(`server started at http://localhost:${port}/graphql`);
