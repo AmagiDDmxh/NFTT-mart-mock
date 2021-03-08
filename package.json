@@ -4,9 +4,10 @@
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/node": "^12.12.8",
+    "@types/graphql": "latest",
+    "typescript": "latest",
     "nodemon": "^1.19.4",
-    "ts-node": "8.5.2",
-    "typescript": "latest"
+    "ts-node": "8.5.2"
   },
   "dependencies": {
     "apollo-server-express": "^2.9.9",
