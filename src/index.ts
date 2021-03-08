@@ -4,12 +4,11 @@ import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
 
-import { HelloWorldResolver } from "./resolvers/HelloWorldResolver";
 import { AssetResolver } from "./resolvers/AssetResolver";
 
 (async () => {
-  console.log('running at', process.env.NODE_ENV);
-  
+  console.log("running at", process.env.NODE_ENV);
+
   const app = express();
 
   const options = await getConnectionOptions(
@@ -19,7 +18,7 @@ import { AssetResolver } from "./resolvers/AssetResolver";
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [HelloWorldResolver, AssetResolver],
+      resolvers: [AssetResolver],
       validate: true,
     }),
     context: ({ req, res }) => ({ req, res }),
