@@ -21,6 +21,9 @@ import { AssetResolver } from "./resolvers/AssetResolver";
       validate: true,
     }),
     context: ({ req, res }) => ({ req, res }),
+    // Enable graphql in production
+    introspection: true,
+    playground: true,
   });
 
   apolloServer.applyMiddleware({ app, cors: false });
