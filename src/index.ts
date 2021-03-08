@@ -8,6 +8,8 @@ import { HelloWorldResolver } from "./resolvers/HelloWorldResolver";
 import { AssetResolver } from "./resolvers/AssetResolver";
 
 (async () => {
+  console.log('running at', process.env.NODE_ENV);
+  
   const app = express();
 
   const options = await getConnectionOptions(
