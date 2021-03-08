@@ -1,12 +1,10 @@
-// @ts-nocheck
 import "reflect-metadata";
 import { createConnection, getConnectionOptions } from "typeorm";
 import express from "express";
-import { ApolloServer, IMocks, MockList } from "apollo-server-express";
+import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
 import { HelloWorldResolver } from "./resolvers/HelloWorldResolver";
 import { AssetResolver } from "./resolvers/AssetResolver";
-import ASSETS from "./mock/assets";
 
 (async () => {
   const app = express();
