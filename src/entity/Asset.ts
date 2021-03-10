@@ -17,31 +17,31 @@ export class Asset extends BaseEntity {
 
   @Field()
   @Column()
-  Name!: string;
+  name!: string;
 
   @Field()
   @Column()
-  Address!: string;
+  address!: string;
 
   @Field()
   @Column()
-  Describe!: string;
+  describe!: string;
 
   @Field()
   @Column()
-  PicUrl!: string;
+  picUrl!: string;
 
   @Field()
   @Column()
-  Metadata!: string;
+  metadata!: string;
 
   @Field()
   @Column()
-  ExternalLinks!: string;
+  externalLinks!: string;
 
   @Field()
   @Column()
-  Status!: number;
+  status!: number;
 
   @Field()
   @Column()
