@@ -73,17 +73,41 @@ export class AssetResolver {
   @Query(() => PaginatedCollections)
   async collections(
     @Arg("pageSize", () => Int, { nullable: true }) pageSize = 10,
-    @Arg("page", () => Int, { nullable: true }) page = 1
-    // @Arg("status", () => Int, { nullable: true }) status = -1,
-    // @Arg("categoryId", () => Int, { nullable: true }) categoryId = -1,
-    // @Arg("collectionId", () => Int, { nullable: true }) collectionId = -1
+    @Arg("page", () => Int, { nullable: true }) page = 1,
+    @Arg("id", () => Int, { nullable: true }) id = -1
   ): Promise<PaginatedCollections> {
     const realLimit = Math.min(20, pageSize);
     const currentPageNumber = (page - 1) * pageSize;
 
-    const filteredCollections = COLLECTIONS;
+    const filteredCollections = COLLECTIONS.filter(
+      ({ id: collectionId }) => id === -1 || collectionId === id
+    );
 
-    console.log(COLLECTIONS[0], filteredCollections[0]);
+    return {
+      collections: (filteredCollections as any).slice(
+        currentPageNumber,
+        realLimit
+      ),
+      hasMore: false,
+    };
+  }
+
+
+  @Query(() => PaginatedCollections)
+  async myCollections(
+    @Arg("pageSize", () => Int, { nullable: true }) pageSize = 10,
+    @Arg("page", () => Int, { nullable: true }) page = 1,
+    @Arg("id", () => Int, { nullable: true }) id = -1,
+    @Arg("user", () => Int, { nullable: true }) user = '',
+  ): Promise<PaginatedCollections> {
+    const realLimit = Math.min(20, pageSize);
+    const currentPageNumber = (page - 1) * pageSize;
+
+    console.log(user);
+
+    const filteredCollections = COLLECTIONS.filter(
+      ({ id: collectionId }) => id === -1 || collectionId === id
+    );
 
     return {
       collections: (filteredCollections as any).slice(
